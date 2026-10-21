@@ -2,7 +2,7 @@
 
 A multi-tenant Retrieval-Augmented Generation (RAG) API platform. Companies upload their own documents (PDF, DOCX, TXT, or a URL), and query them through a secure, isolated, rate-limited API — with every answer grounded in their own data and backed by source citations.
 
-## Why this exists
+# Why this exists
 
 Most RAG demos are single-user prototypes. KnowledgeSilo is built the way a real SaaS product would be: strict tenant data isolation, API-key authentication, per-key rate limiting, async background processing, automated tests, and CI/CD — not just "does the chatbot answer questions," but "would this survive being handed to another engineering team."
 
