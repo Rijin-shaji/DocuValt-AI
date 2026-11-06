@@ -17,7 +17,7 @@ Most RAG demos are single-user prototypes. KnowledgeSilo is built the way a real
 - **Groq (openai/gpt-oss-20b)** — fast LLM inference for grounded answer generation
 - **sentence-transformers (all-MiniLM-L6-v2)** — local embedding generation, 384 dimensions
 
-### Tenant isolation
+## Tenant isolation
 
 Every document chunk is tagged with a `tenant_id` at write time, and every retrieval query filters on it before any similarity search runs. One company's data is never visible to another's queries, enforced at the database query level — not just in application logic.
 
