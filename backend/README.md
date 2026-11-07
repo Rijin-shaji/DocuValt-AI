@@ -21,7 +21,7 @@ Most RAG demos are single-user prototypes. KnowledgeSilo is built the way a real
 
 Every document chunk is tagged with a `tenant_id` at write time, and every retrieval query filters on it before any similarity search runs. One company's data is never visible to another's queries, enforced at the database query level — not just in application logic.
 
-### Request flow
+## Request flow
 
 1. A tenant authenticates via an `X-API-Key` header (bcrypt-hashed, never stored in plaintext)
 2. On upload: file is routed to the right loader (PDF/DOCX/TXT/URL) → text is chunked with overlap → chunks are queued for embedding via a Celery background task → vectors are stored in pgvector, tagged by tenant
