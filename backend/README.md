@@ -1,4 +1,4 @@
-## KnowledgeSilo
+# KnowledgeSilo
 
 A multi-tenant Retrieval-Augmented Generation (RAG) API platform. Companies upload their own documents (PDF, DOCX, TXT, or a URL), and query them through a secure, isolated, rate-limited API — with every answer grounded in their own data and backed by source citations.
 
